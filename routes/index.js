@@ -11,6 +11,10 @@ router.get("/register", (req, res) => {
   res.render("pages/register");
 });
 
+router.get("/details", (req, res) => {
+  res.render("pages/details");
+});
+
 router.get("/login", (req, res) => {
   res.render("pages/login");
 });
