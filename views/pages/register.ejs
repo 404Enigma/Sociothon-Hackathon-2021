@@ -9,32 +9,33 @@
     <script src="/plugins/jquery/jquery.slim.min.js"></script>
     <script src="/plugins/bootstrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/login.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'})
-    %>
+    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'}) %>
 
     <div class="container">
       <h1 class="my-5">Vendor Register</h1>
 
-      <form class="mb-5 pb-5">
+      <form class="mb-5 pb-5" id="vendor_register">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputEmail4">First Name</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="John" />
+            <input type="text" class="form-control" name="first_name" id="inputEmail4" placeholder="John" required />
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword4">Last Name</label>
-            <input type="text" class="form-control" id="inputPassword4" placeholder="Fish" />
+            <input type="text" class="form-control" name="last_name" id="inputPassword4" placeholder="Fish" required />
           </div>
         </div>
         <div class="form-group">
           <label for="inputstore">Store Name</label>
-          <input type="text" class="form-control" id="inputstore" placeholder="Pharmacy" />
+          <input type="text" class="form-control" name="store_name" id="inputstore" placeholder="Pharmacy" required />
         </div>
         <div class="form-group">
           <label for="inputid">Medical ID</label>
-          <input type="text" class="form-control" id="inputid" placeholder="MH16DH" />
+          <input type="text" class="form-control" name="medical_id" id="inputid" placeholder="MH16DH" required />
         </div>
         <div class="form-group">
           <label for="inputAddress">Store Address Line 1</label>
@@ -68,5 +69,27 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
+    <script>
+      const form = document.getElementById("vendor_register");
+      const obj = {};
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        let formData = new FormData(form);
+
+        console.log(formData.get("first_name"));
+        obj.first_name = formData.get("first_name");
+        obj.last_name = formData.get("last_name");
+        obj.store_name = formData.get("store_name");
+        obj.medical_id = formData.get("medical_id");
+
+        console.log(obj);
+
+        axios.post("/register", obj).then(function (response) {
+          console.log(response);
+        });
+      });
+    </script>
   </body>
 </html>
