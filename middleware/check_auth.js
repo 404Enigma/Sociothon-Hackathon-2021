@@ -1,4 +1,5 @@
 const admin = require("../config/db");
+const { save_user } = require("../modal/users/user");
 
 function savecookie(idtoken, res) {
   const expiresIn = 60 * 60 * 24 * 5 * 1000;
@@ -14,6 +15,9 @@ function savecookie(idtoken, res) {
           .auth()
           .verifyIdToken(idtoken)
           .then(function (decodedClaims) {
+            //save users to database
+            console.log(decodedClaims);
+            save_user(decodedClaims.uid, decodedClaims.email, decodedClaims.name);
             res.redirect("/list");
           });
       },
