@@ -15,6 +15,10 @@ router.get("/details", (req, res) => {
   res.render("pages/details");
 });
 
+router.get("/cart", (req, res) => {
+  res.render("pages/cart");
+});
+
 router.get("/customer", (req, res) => {
   res.render("pages/customer");
 });
