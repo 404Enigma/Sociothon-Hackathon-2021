@@ -17,6 +17,7 @@ body {
     #243b55,
     #141e30
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
 }
 
 .navbar-brand {
@@ -337,6 +338,15 @@ button[type="button"] {
 
 .product-deatil .message-text {
   width: calc(100% - 70px);
+}
+
+#current {
+  border: 5px solid rgb(194, 125, 35);
+  border-radius: 5px;
+  /* padding: 30px auto 5px auto; */
+}
+#drugs {
+  border-left: 4px solid rgb(194, 125, 35);
 }
 
 @media only screen and (min-width: 1024px) {
