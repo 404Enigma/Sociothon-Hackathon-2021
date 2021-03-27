@@ -10,6 +10,13 @@ body {
   line-height: 1.5385;
   color: #333;
   text-align: left;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #243b55, #141e30); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar-brand {
@@ -27,7 +34,7 @@ nav {
 }
 h1 {
   margin-bottom: 20px;
-  color: #333;
+  color: #fff;
 }
 button[type="button"] {
   color: black;

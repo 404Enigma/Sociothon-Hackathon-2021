@@ -15,6 +15,10 @@ router.get("/details", (req, res) => {
   res.render("pages/details");
 });
 
+router.get("/customer", (req, res) => {
+  res.render("pages/customer");
+});
+
 router.get("/login", (req, res) => {
   res.render("pages/login");
 });
