@@ -26,8 +26,18 @@ nav {
   font-size: larger;
   padding-left: 500px;
 }
+.nav-link {
+  margin-right: 10px;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #fff;
+}
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #fff;
   text-decoration: underline;
+}
+button[type="button"] {
+  color: black;
+  background-color: orangered;
 }
