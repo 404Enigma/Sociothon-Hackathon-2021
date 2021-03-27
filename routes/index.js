@@ -3,6 +3,8 @@ const router = express.Router();
 
 const { checkCookie, savecookie } = require("../middleware/check_auth");
 
+const { user_exist } = require("../modal/users/user");
+
 router.get("/", (req, res) => {
   res.render("pages/home");
 });
@@ -31,15 +33,12 @@ router.get("/login", (req, res) => {
   res.render("pages/login");
 });
 
-router.get("/logout", (req, res) => {
+router.get("/logout", checkCookie, async (req, res) => {
+  console.log(req.decodedClaims.uid);
+
+  const logout_user = await user_exist(req.decodedClaims.uid);
   res.clearCookie("__session");
   res.redirect("/");
-});
-
-router.get("/success", checkCookie, (req, res) => {
-  res.sendFile(__dirname + "/success.html");
-  console.log("UID of Signed in User is" + req.decodedClaims.uid);
-  //You will reach here only if session is working Fine
 });
 
 router.get("/savecookie", (req, res) => {
