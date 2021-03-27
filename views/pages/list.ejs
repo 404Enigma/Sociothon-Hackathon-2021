@@ -17,6 +17,7 @@
     <main>
       <div class="container">
         <h1 class="mt-5 text-light">Medicine List</h1>
+        <!-- Search Bar -->
         <nav class="navbar navbar-dark bg-dark justify-content-end rounded">
           <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
@@ -41,21 +42,20 @@
                   />
                 </div>
                 <div class="media-body mx-4">
-                  <h5 class="media-title font-weight-semibold">
-                    <a href="#" data-abc="true"><%= data.Medicine_Name %></a>
-                  </h5>
-                  <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                  <h5 class="media-title font-weight-semibold"> <%= data.Medicine_Name %> </h5>
+                  <!-- <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
                     <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Phones</a></li>
                     <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Mobiles</a></li>
-                  </ul>
-                  <p class="mb-3"
-                    >128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip
-                    Processor | Gorilla Glass with high quality display
+                  </ul> -->
+                  <p class="">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam distinctio nisi iste,
+                    quaerat maiores neque explicabo amet vitae quis nesciunt. Cupiditate temporibus voluptatum qui
+                    explicabo consequuntur accusantium hic reiciendis.
                   </p>
-                  <ul class="list-inline list-inline-dotted mb-0">
+                  <!-- <ul class="list-inline list-inline-dotted mb-0">
                     <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
                     <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
-                  </ul>
+                  </ul> -->
                 </div>
                 <div class="mx-3 mt-4 ml-lg-3 text-center">
                   <h3 class="mb-0 font-weight-semibold"><%= data.Medicine_PRICE %>/-</h3>

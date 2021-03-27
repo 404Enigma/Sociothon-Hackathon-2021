@@ -12,13 +12,14 @@
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signin</title>
-
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon" />
     <script src="/plugins/jquery/jquery.slim.min.js"></script>
     <script src="/plugins/bootstrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/login.css" />
   </head>
   <body>
-    <%- include('../partials/navbar'); %>
+    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'})
+    %>
 
     <div class="container" id="container">
       <div class="jumbotron jumbotron-fluid rounded-lg">
