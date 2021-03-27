@@ -10,17 +10,8 @@ body {
   line-height: 1.5385;
   color: #333;
   text-align: left;
-  background-image: url(/assets/cover.jpg);
 }
-.mt-50 {
-  margin-top: 50px;
-}
-.mb-50 {
-  margin-bottom: 50px;
-}
-.fa {
-  color: red;
-}
+
 .navbar-brand {
   font-size: x-large;
 }
@@ -36,10 +27,12 @@ nav {
 }
 h1 {
   margin-bottom: 20px;
-  color: #fff;
-  text-decoration: underline;
+  color: #333;
 }
 button[type="button"] {
   color: black;
   background-color: orangered;
+}
+#container {
+  margin: 100px auto;
 }
