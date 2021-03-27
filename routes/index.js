@@ -46,11 +46,12 @@ router.get("/savecookie", (req, res) => {
 
 router.get("/python", (req, res) => {
   const spawn = require("child_process").spawn;
-  console.log(req.query.firstname);
 
-  const process = spawn("python", ["./scripts/demo.py", req.query.firstname, req.query.lastname]);
+  const process = spawn("python", ["./scripts/demo.py", req.query.val]);
 
   process.stdout.on("data", function (data) {
+    console.log(data);
+    console.log("\x1b[36m%s\x1b[0m", data.toString());
     res.send(data.toString());
   });
 });
