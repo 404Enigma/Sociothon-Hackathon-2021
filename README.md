@@ -67,3 +67,11 @@ Secondly, to tackle the problem of the poor distinction between the branded and 
 </ul>
 </ul>
 </div>
+&nbsp;
+&nbsp;
+<h2>Video Link</h2>
+<a href="https://drive.google.com/file/d/1Yv_tCXfCpxK5ZP4PcmsBsbnPTk7pzz6i/view">Click here</a>
+&nbsp;
+&nbsp;
+<h2>Screenshots Link</h2>
+<a href="https://drive.google.com/drive/folders/1Ph5J4GyiYTuL0KJBiTLVCVxlGVdWoF5F?usp=sharing">Click here</a>
