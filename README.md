@@ -80,3 +80,7 @@ Secondly, to tackle the problem of the poor distinction between the branded and 
 &nbsp;
 <h2>Screenshots Link</h2>
 <a href="https://drive.google.com/drive/folders/1Ph5J4GyiYTuL0KJBiTLVCVxlGVdWoF5F?usp=sharing">Click here</a>
+&nbsp;
+&nbsp;
+<h2>Checkout on Devfolio</h2>
+<a href="https://devfolio.co/submissions/clinica-e4f7">Click here</a>
