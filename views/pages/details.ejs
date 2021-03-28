@@ -9,10 +9,11 @@
     <script src="/plugins/jquery/jquery.slim.min.js"></script>
     <script src="/plugins/bootstrap/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/css/details.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'})
-    %>
+    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock',route1:'/login',route2: '/cart', para2:'Cart', style2:'fas fa-shopping-cart'}) %>
 
     <div class="container my-4">
       <div class="col-sm-12 col-md-12 col-lg-12">
@@ -245,9 +246,7 @@
               <div class="row justify-content-center">
                 <div class="col-sm-12 col-lg-12 row" id="current">
                   <span class="col-6 my-auto py-3"><h4> Predicted Sales of Current Month</h4></span>
-                  <span class="col-6 my-auto d-flex justify-content-center" id="drugs"
-                    ><h4> <%=predicted_value%> </h4></span
-                  >
+                  <span class="col-6 my-auto d-flex justify-content-center" id="drugs"><h4> <%=predicted_value%> </h4></span>
                 </div>
                 <!-- <div class="col-sm-12 col-md-6 col-lg-6">
                   <div class="btn-group pull-right">
@@ -257,9 +256,9 @@
                 </div> -->
               </div>
               <div class="mt-5 col-12" id="prediction">
-                <form>
+                <form id="predictive_form">
                   <label for="start"><h6>Predict Sales for month: &nbsp;</h6></label>
-                  <input type="month" id="start" name="start" value="2018-05" />
+                  <input type="month" id="start" name="date" value="2018-05" />
                   <button type="submit" class="ml-2 btn btn-dark btn-sm">Submit</button>
                 </form>
                 <div><h5> Output </h5></div>
@@ -270,5 +269,23 @@
         <!-- end product -->
       </div>
     </div>
+    <script>
+      const form = document.getElementById("predictive_form");
+      const obj = {};
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        let formData = new FormData(form);
+
+        obj.date = formData.get("date");
+
+        console.log(obj);
+
+        axios.post("/:id/details", obj).then(function (response) {
+          console.log(response);
+        });
+      });
+    </script>
   </body>
 </html>

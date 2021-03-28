@@ -17,12 +17,14 @@ const list = require("./routes/list/list");
 const register = require("./routes/register/register");
 const stock = require("./routes/stocks/stock");
 const details = require("./routes/details/details");
+const customer = require("./routes/customers/customer");
 
 app.use(home);
 app.use("/list", list);
 app.use("/register", register);
 app.use("/stocks", stock);
 app.use(details);
+app.use("/customer", customer);
 
 app.listen(PORT, () => {
   console.log(`Listining on ${PORT}`);
