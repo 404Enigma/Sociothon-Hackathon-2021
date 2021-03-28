@@ -18,12 +18,4 @@ router.get("/", checkCookie, async (req, res) => {
   res.render("pages/list", { drug_data });
 });
 
-router.get("/python", checkCookie, async (req, res) => {
-  console.log(req.decodedClaims);
-  const response = await axios.get(`https://healthapi1.herokuapp.com/35/R06`);
-  console.log(response.data);
-  //res.render("pages/list", { data });
-  //res.status(200).send("Response : ", response.data);
-});
-
 module.exports = router;
