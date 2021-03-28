@@ -2,7 +2,7 @@ const express = require("express");
 const axios = require("axios");
 
 const router = express.Router();
-const { checkCookie, savecookie } = require("../../middleware/check_auth");
+const { checkCookie } = require("../../middleware/check_auth");
 const { get_drug_list } = require("../../modal/drug_list/drug_list");
 
 router.get("/", checkCookie, async (req, res) => {

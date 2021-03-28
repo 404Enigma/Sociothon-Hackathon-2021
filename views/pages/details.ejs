@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="/css/details.css" />
   </head>
   <body>
-    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'})
-    %>
+    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'}) %>
 
     <div class="container my-4">
       <div class="col-sm-12 col-md-12 col-lg-12">
@@ -68,7 +67,7 @@
 
             <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
               <h2 class="name mt-sm-4">
-                Paracetamol
+                <%= drug_data.id%>
                 <small></small>
                 <!-- <i class="fa fa-star fa-2x text-primary"></i>
                 <i class="fa fa-star fa-2x text-primary"></i>
@@ -81,11 +80,7 @@
 
               <hr />
               <div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa soluta totam veniam dolor iure itaque
-                  quibusdam, velit laborum, doloribus placeat dolore illum distinctio perferendis quod id tenetur,
-                  accusamus at corrupti.
-                </p>
+                <p> <%= drug_data.description%> </p>
               </div>
               <hr />
               <!-- <h3 class="price-container">
@@ -262,25 +257,14 @@
                 <!-- <label for="start"><h6>Predict Sales for month: &nbsp;</h6></label>
                 <input type="month" id="start" name="start" value="2018-05" />
                 <i class="fas fa-arrow-circle-right fa-2x"></i> -->
-                <button
-                  type="button"
-                  class="btn btn-warning pt-3 col-12"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >
+                <button type="button" class="btn btn-warning pt-3 col-12" data-toggle="modal" data-target="#exampleModal">
                   <h2>Predict Sales for month</h2>
                 </button>
               </div>
               <!-- Button trigger modal -->
 
               <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModal"
-                tabindex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
