@@ -17,10 +17,6 @@ router.get("/cart", (req, res) => {
   res.render("pages/cart");
 });
 
-router.get("/stocks", (req, res) => {
-  res.render("pages/stocks");
-});
-
 router.get("/customer", (req, res) => {
   res.render("pages/customer");
 });

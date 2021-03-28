@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="/css/list.css" />
   </head>
   <body>
-    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'})
-    %>
+    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'}) %>
 
     <main>
       <div class="container">
@@ -29,12 +28,10 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="p-0 m-0">
-              <% data.forEach(function(data) { %>
+              <% drug_data.forEach(function(data) { %>
               <li>
                 <div class="card card-body mb-4">
-                  <div
-                    class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row"
-                  >
+                  <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
                     <div class="mr-2 mb-3 mb-lg-0">
                       <img
                         src="https://i.guim.co.uk/img/media/20491572b80293361199ca2fc95e49dfd85e1f42/0_236_5157_3094/master/5157.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=fc5fad5b6c2b545b7143b9787d0c90b1"
@@ -44,29 +41,25 @@
                       />
                     </div>
                     <div class="media-body mx-4">
-                      <h5 class="media-title font-weight-semibold"> <%= data.Medicine_Name %> </h5>
+                      <h5 class="media-title font-weight-semibold"> <%= data.id %> </h5>
                       <!-- <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
                     <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Phones</a></li>
                     <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Mobiles</a></li>
                   </ul> -->
-                      <p class="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam distinctio nisi iste,
-                        quaerat maiores neque explicabo amet vitae quis nesciunt. Cupiditate temporibus voluptatum qui
-                        explicabo consequuntur accusantium hic reiciendis.
-                      </p>
+                      <p class=""> <%= data.description %> </p>
                       <!-- <ul class="list-inline list-inline-dotted mb-0">
                     <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
                     <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
                   </ul> -->
                     </div>
                     <div class="mx-3 mt-4 ml-lg-3 text-center">
-                      <h3 class="mb-0 font-weight-semibold"><%= data.Medicine_PRICE %>/-</h3>
+                      <h3 class="mb-0 font-weight-semibold"><%= data.price %>/-</h3>
                       <!-- <div>
                     <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                   </div>
                   <div class="text-muted">1985 reviews</div> -->
-                      <button type="button" class="btn mt-4 text-white"> Details </button>
+                      <button type="button" class="btn mt-4 text-white" href="/<%=data.id%>/details"> Details </button>
                     </div>
                   </div>
                 </div>
