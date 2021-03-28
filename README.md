@@ -1,5 +1,5 @@
 <div align="center">
-<img src="">
+<img src="https://github.com/404Enigma/Sociothon-Hackathon-2021/blob/main/Extra/Clinica%20Logo.png">
 <h1> Clinica</h1>
 <h4>Sociothon-Hackathon-2021</h4>
 </div>
