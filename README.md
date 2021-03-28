@@ -3,7 +3,12 @@
 <h1> Clinica</h1>
 <h4>Sociothon-Hackathon-2021</h4>
 </div>
-
+&nbsp;
+&nbsp;
+<h2>Website Link</h2>
+<a href="https://shrouded-basin-46770.herokuapp.com/">Click here</a>
+&nbsp;
+&nbsp;
 <div>
 <h2>Tagline</h2>
 <p>Clinica is a web platform that can be used to provide generic medicines at a cheaper price to patients under the Government of India's Jan Aushadhi Scheme (JAS). It tackles the problem of a weak supply chain using artificial intelligence (AI) and bridges the poor distinction between the price of branded and generic medicines by building a specific platform for selling medicines.</p>
