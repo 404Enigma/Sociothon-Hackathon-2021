@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="/css/details.css" />
   </head>
   <body>
-    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'}) %>
+    <%- include('../partials/navbar',{para1:'Login', style1:'fas fa-lock', para2:'Cart', style2:'fas fa-shopping-cart'})
+    %>
 
     <div class="container my-4">
       <div class="col-sm-12 col-md-12 col-lg-12">
@@ -244,7 +245,9 @@
               <div class="row justify-content-center">
                 <div class="col-sm-12 col-lg-12 row" id="current">
                   <span class="col-6 my-auto py-3"><h4> Predicted Sales of Current Month</h4></span>
-                  <span class="col-6 my-auto d-flex justify-content-center" id="drugs"><h4> <%=predicted_value%> </h4></span>
+                  <span class="col-6 my-auto d-flex justify-content-center" id="drugs"
+                    ><h4> <%=predicted_value%> </h4></span
+                  >
                 </div>
                 <!-- <div class="col-sm-12 col-md-6 col-lg-6">
                   <div class="btn-group pull-right">
@@ -253,43 +256,13 @@
                   </div>
                 </div> -->
               </div>
-              <div class="mt-5 col-12">
-                <!-- <label for="start"><h6>Predict Sales for month: &nbsp;</h6></label>
-                <input type="month" id="start" name="start" value="2018-05" />
-                <i class="fas fa-arrow-circle-right fa-2x"></i> -->
-                <button type="button" class="btn btn-warning pt-3 col-12" data-toggle="modal" data-target="#exampleModal">
-                  <h2>Predict Sales for month</h2>
-                </button>
-              </div>
-              <!-- Button trigger modal -->
-
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalLabel">Prediction</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <label for="start"><h5>Predict Sales for month: &nbsp;</h5></label>
-                      <input type="month" id="start" name="start" value="2018-05" />
-
-                      <div class="d-flex justify-content-center">
-                        <div class="col-sm-12 col-lg-12 row" id="current">
-                          <span class="col-6 my-auto py-3"><h5> Predicted Sales</h5></span>
-                          <span class="col-6 my-auto d-flex justify-content-center" id="drugs"><h4> X drugs </h4></span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                    </div>
-                  </div>
-                </div>
+              <div class="mt-5 col-12" id="prediction">
+                <form>
+                  <label for="start"><h6>Predict Sales for month: &nbsp;</h6></label>
+                  <input type="month" id="start" name="start" value="2018-05" />
+                  <button type="submit" class="ml-2 btn btn-dark btn-sm">Submit</button>
+                </form>
+                <div><h5> Output </h5></div>
               </div>
             </div>
           </div>
