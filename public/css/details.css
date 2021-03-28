@@ -37,10 +37,7 @@ h1 {
   margin-bottom: 20px;
   color: #fff;
 }
-button[type="button"] {
-  color: black;
-  background-color: orangered;
-}
+
 #container {
   margin: 100px auto;
 }
