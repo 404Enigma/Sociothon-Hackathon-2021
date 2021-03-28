@@ -1,6 +1,5 @@
 node_modules
 penv
 
-serviceAccountKey.json
+
 scripts/firstmodel.sav
-/public/plugins
