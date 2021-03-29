@@ -6,7 +6,7 @@
 &nbsp;
 &nbsp;
 <h2>Website Link</h2>
-<a href="https://shrouded-basin-46770.herokuapp.com/">Click here</a>
+<a href="https://shrouded-basin-46770.herokuapp.com/">Click Here</a>
 &nbsp;
 &nbsp;
 <div>
@@ -75,12 +75,12 @@ Secondly, to tackle the problem of the poor distinction between the branded and 
 &nbsp;
 &nbsp;
 <h2>Video Link</h2>
-<iframe src="https://player.vimeo.com/video/529895673" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<a href="https://vimeo.com/529895673">Click Here</a>
 &nbsp;
 &nbsp;
 <h2>Screenshots Link</h2>
-<a href="https://drive.google.com/drive/folders/1Ph5J4GyiYTuL0KJBiTLVCVxlGVdWoF5F?usp=sharing">Click here</a>
+<a href="https://drive.google.com/drive/folders/1Ph5J4GyiYTuL0KJBiTLVCVxlGVdWoF5F?usp=sharing">Click Here</a>
 &nbsp;
 &nbsp;
 <h2>Checkout on Devfolio</h2>
-<a href="https://devfolio.co/submissions/clinica-e4f7">Click here</a>
+<a href="https://devfolio.co/submissions/clinica-e4f7">Click Here</a>
