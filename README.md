@@ -84,3 +84,7 @@ Secondly, to tackle the problem of the poor distinction between the branded and 
 &nbsp;
 <h2>Checkout on Devfolio</h2>
 <a href="https://devfolio.co/submissions/clinica-e4f7">Click Here</a>
+&nbsp;
+&nbsp;
+<h2>Checkout our Sales Predicting API</h2>
+<a href="https://healthapi1.herokuapp.com/">Click Here</a>
