@@ -75,7 +75,7 @@ Secondly, to tackle the problem of the poor distinction between the branded and 
 &nbsp;
 &nbsp;
 <h2>Video Link</h2>
-<a href="https://vimeo.com/529895673">Click Here</a>
+<a href="https://vimeo.com/529895673" target="_blank">Click Here</a>
 &nbsp;
 &nbsp;
 <h2>Screenshots Link</h2>
