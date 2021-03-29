@@ -75,7 +75,7 @@ Secondly, to tackle the problem of the poor distinction between the branded and 
 &nbsp;
 &nbsp;
 <h2>Video Link</h2>
-<a href="https://drive.google.com/file/d/1Yv_tCXfCpxK5ZP4PcmsBsbnPTk7pzz6i/view">Click here</a>
+<iframe src="https://player.vimeo.com/video/529895673" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 &nbsp;
 &nbsp;
 <h2>Screenshots Link</h2>
