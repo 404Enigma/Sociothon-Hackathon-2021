@@ -5,6 +5,12 @@
 </div>
 &nbsp;
 &nbsp;
+
+> ## The Outcome looks great!
+>
+> 🏆 Secured 1st position.
+
+&nbsp;
 <h2>Website Link</h2>
 <a href="https://shrouded-basin-46770.herokuapp.com/">Click Here</a>
 &nbsp;
