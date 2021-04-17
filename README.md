@@ -6,9 +6,9 @@
 &nbsp;
 &nbsp;
 
-> ## The Outcome looks great!
+> # The Outcome looks great!
 >
-> 🏆 Secured 1st position.
+> ## 🏆 Secured 1st position.
 
 &nbsp;
 <h2>Website Link</h2>
